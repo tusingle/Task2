@@ -2,35 +2,33 @@ import { useState } from 'react';
  
 export default function Form() {
  
-  // States for registration
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
- 
-  // States for checking the errors
+
+
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
  
-  // Handling the name change
-  const handleName = (e) => {
+  const handleName = (e:any) => {
     setName(e.target.value);
     setSubmitted(false);
   };
  
-  // Handling the email change
-  const handleEmail = (e) => {
+
+  const handleEmail = (e:any) => {
     setEmail(e.target.value);
     setSubmitted(false);
   };
- 
-  // Handling the password change
-  const handlePassword = (e) => {
+
+  const handlePassword = (e:any) => {
     setPassword(e.target.value);
     setSubmitted(false);
   };
  
-  // Handling the form submission
-  const handleSubmit = (e) => {
+
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     if (name === '' || email === '' || password === '') {
       setError(true);
@@ -40,7 +38,7 @@ export default function Form() {
     }
   };
  
-  // Showing success message
+
   const successMessage = () => {
     return (
       <div
@@ -53,7 +51,7 @@ export default function Form() {
     );
   };
  
-  // Showing error message if error is true
+  
   const errorMessage = () => {
     return (
       <div
@@ -72,14 +70,14 @@ export default function Form() {
         <h1>User Registration</h1>
       </div>
  
-      {/* Calling to the methods */}
+      
       <div className="messages">
         {errorMessage()}
         {successMessage()}
       </div>
  
       <form>
-        {/* Labels and inputs for form data */}
+    
         <label className="label">Name</label>
         <br/><br/>
         <input onChange={handleName} className="input"
