@@ -1,50 +1,27 @@
-.App {
-    text-align: center;
-    background-color:green;
-  }
-   
-  .label{
-    display: block;
-    font-size: larger;
-    color: white;
-    padding: 5px;
-  }
-   
-  .input{
-    font-size: larger;
-    padding: 5px;
-    margin: 2px;
-    
-  }
-  .btn{
-    color: white;
-    background-color: red;
-    border-radius: 5px;
-    font-size: larger;
-    display: block;
-    padding: 5px;
-    margin: 10px auto;
-  }
-   
-  .messages{
-    display: flex;
-    justify-content: center;
-  }
-   
-  .error{
-    display: block;
-    background-color: red;
-    color: white;
-    width: fit-content;
-    height: 50px;
-    padding: 5px;
-  }
-   
-  .success{
-    display: block;
-    background-color: lightblue;
-    color: black;
-    width: fit-content;
-    height: 50px;
-    padding: 5px;
-  }
+.result {
+  height: 60px;
+  background-color: #bbb;
+  width: 100%;
+}
+
+.result p {
+  font-size: 40px;
+  margin: 5px;
+
+}
+
+.calculator-body {
+  max-width: 400px;
+  margin: auto;
+}
+
+.button {
+  display: block;
+  background-color: #bbb;
+}
+
+button {
+  width: 25%;
+  height: 60px;
+  font-size: 30px;
+}
