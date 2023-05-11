@@ -4,6 +4,9 @@ import ResultComponent from './components/ResultComponent';
 import KeyPadComponent from "./components/KeyPadComponent";
 
 class App extends Component {
+
+  console.log = ('component', component)
+
     constructor(){
         super();
 
